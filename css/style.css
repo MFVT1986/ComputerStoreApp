@@ -1,0 +1,129 @@
+:root {
+    --DARK_PRIMARY_COLOR: #303F9F;
+    --LIGHT_PRIMARY_COLOR: #C5CAE9;
+    --PRIMARY_COLOR: #3F51B5;
+    --TEXT_ICONS: #FFFFFF;
+    --ACCENT_COLOR: #607D8B;
+    --PRIMARY_TEXT: #212121;
+    --SECONDARY_TEXT: #757575;
+    --DIVIDER_COLOR: #BDBDBD;
+}
+
+body {
+    color: var(--PRIMARY_TEXT);
+}
+
+
+/* #region menu */
+
+.navbar {
+    background-color: var(--DARK_PRIMARY_COLOR);
+}
+
+
+/* #endregion */
+
+
+/* #region calculadora ganancias*/
+
+.ContentValoresGanacia {
+    padding: 20px;
+    width: 70%;
+    margin-left: 40%;
+    border: solid 1px var(--ACCENT_COLOR);
+}
+
+.CenterValores {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.TotalesGanacia {
+    padding: 5%;
+    width: 60%;
+    margin-left: 10%;
+    margin-top: 4%;
+    border: solid 1px var(--ACCENT_COLOR);
+}
+
+.alinearValor {
+    display: block;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+span#lblValorIva {
+    margin-left: 45px;
+}
+
+span#lblValorTotal {
+    margin-left: 40px;
+    color: #28a745;
+}
+
+
+/* #endregion */
+
+
+/* #region convertidor Unidades*/
+
+.ContentValoresUnidad {
+    padding: 20px;
+    border: solid 1px var(--ACCENT_COLOR);
+}
+
+.ElementInline {
+    display: flex;
+}
+
+.ResultValor {
+    color: var(--SECONDARY_TEXT);
+    text-align: center;
+    font-style: italic;
+}
+
+
+/* #endregion */
+
+
+/* #region Formularios */
+
+.SizeImagenes {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.paginate_button {
+    cursor: pointer;
+    padding-left: 6px;
+    margin-left: 2px;
+    padding-right: 6px;
+    border: 1px solid #054284;
+    color: #fff;
+    background-color: var(--PRIMARY_COLOR);
+}
+
+.paginate_button:hover {
+    background-color: #2778c4;
+    color: #fff;
+    text-decoration: none;
+}
+
+div.dataTables_wrapper div.dataTables_paginate {
+    margin-top: -20px;
+}
+
+.input-error {
+    border-color: red;
+    color: red;
+}
+
+th#btnTable {
+    width: 100px !important;
+}
+
+
+/* #endregion */

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Programación de sitios web fase 3 diseño e implementación frontend">
+    <meta name="author" content="Grupo 301127_12">
+    <title>ComputerStoreApp</title>
+
+    <!-- <link href="Images/UnadLogo.jpg" rel="icon" type="image/png">-->
+    <link rel="stylesheet" href="/ComputerStoreApp/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/ComputerStoreApp/lib/font-awesome/all.min.css">
+    <link rel="stylesheet" href="/ComputerStoreApp/css/style.css">
+    <link rel="stylesheet" href="/ComputerStoreApp/lib/sweetalert2/sweetalert2.min.css">
+</head>
+
+<body>
+    <div class="menuContainer"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-5 text-center">
+                <h5>Calcular ganacias de los productos</h5>
+            </div>
+            <div class="col-md-12">
+                <form id="frmCalculaGanacia" class="mt-lg-5 mt-md-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="ContentValoresGanacia">
+                                <div class="col-md-12 CenterValores">
+                                    <div class="form-group">
+                                        <label for="txtValorCompra">Valor de compra</label>
+                                        <input type="number" class="form-control InputValor" id="txtValorCompra">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 CenterValores">
+                                    <div class="form-group">
+                                        <label for="txtPorcentajeIVA">Porcentaje IVA</label>
+                                        <input type="number" class="form-control InputValor" id="txtPorcentajeIVA">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 CenterValores">
+                                    <div class="form-group">
+                                        <label for="txtPorcentajeGanancia">Porcentaje ganancias</label>
+                                        <input type="number" class="form-control InputValor" id="txtPorcentajeGanancia">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="TotalesGanacia">
+                                <label class="alinearValor">Valor IVA: <span id="lblValorIva">$ 0</span></label>
+                                <label class="alinearValor">Valor ganancia: <span id="lblValorGanacia">$ 0</span></label>
+                                <label class="alinearValor">Valor total: <span id="lblValorTotal">$ 0</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="loading"></div>
+</body>
+<script src="/ComputerStoreApp/lib/jquery/dist/jquery.min.js"></script>
+<script src="/ComputerStoreApp/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/ComputerStoreApp/lib/font-awesome/all.min.js"></script>
+<script src="/ComputerStoreApp/lib/sweetalert2/sweetalert2.min.js"></script>
+<script src="/ComputerStoreApp/js/script.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.menuContainer').load("../shared/NavMenu.html");
+        $('.loading').load("../shared/Loading.html");
+    });
+</script>
+
+</html>
